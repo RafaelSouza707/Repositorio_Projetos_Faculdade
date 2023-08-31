@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>IMDB Pirata</title>
+</head>
+
+<body>
+    <header class="cabecalho">
+        <!--Barra de navegação e Itens de navegação-->
+        <div class="navbar navbar-dark bg-dark shadow-sm">
+            <div class="navbar">
+                <a href="index.html" class="navbar-brand d-flex align-items-center">Logo</a>
+                <a href="index.html" class="navbar-brand d-flex align-items-center">Inicio</a>
+                <a href="page2.html" class="navbar-brand d-flex align-items-center">Produtos</a>
+                <a href="page2.html" class="navbar-brand d-flex align-items-center">Preços</a>
+                <a href="page2.html" class="navbar-brand d-flex align-items-center">Mais</a>
+                <a href="page2.html" class="navbar-brand d-flex align-items-center">Contate-nos</a>
+            </div>
+            <!--Barra de pesquisa-->
+            <div class="#">
+                <nav class="navbar navbar-light bg-dark">
+                    <form class="form-inline">
+                        <input id="barra-pesquisa" class="fomr-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+                        <button class="btn btn-outline-success my2 my-sm-0 bg-pink" type="submit">Pesquisar</button>
+                    </form>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="mt-2">
+        <div class="container">
+          <!--Carousel-->
+          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="background-color: rgb(196, 193, 193);">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <!--Carousel conteúdos-->
+            <div class="carousel-inner" style="height: 35em;">
+              <div class="carousel-item h-100 active" style="background-image: url(img/img-carrosel/the-batman-capa.png); background-size: contain; background-repeat: no-repeat; background-position: center;">
+                <div class="carousel-caption d-none d-md-block" style="border-radius: 25px; backdrop-filter: blur(40px); margin: 0px; padding: 0px;">
+                  <h5>Batman</h5>
+                  <p style="color: white;">Dois anos de noites transformaram Bruce Wayne em um animal noturno. Mas enquanto ele continua a encontrar seu caminho, o cavaleiro das trevas de Gotham, Bruce, é forçado a entrar em um jogo de gato e rato com sua maior ameaça até agora...</p>
+                </div>
+              </div>
+              <div class="carousel-item h-100" style="background-image: url(img/img-carrosel/duna_1080x540.avif); background-size: contain; background-repeat: no-repeat; background-position: center;">
+                <div class="carousel-caption d-none d-md-block" style="border-radius: 25px; backdrop-filter: blur(40px); margin: 0px; padding: 0px;">
+                  <h5>Os mais bem avaliados do ano</h5>
+                  <p style="color: white;">Veja os Filmes mais bem aváliados no ano de 2023</p>
+                </div>
+              </div>
+              <div class="carousel-item h-100" style="background-image: url(img/img-carrosel/RAM_1080x540.jpg); background-size: contain; background-repeat: no-repeat; background-position: center;">
+                <div class="carousel-caption d-none d-md-block" style="border-radius: 25px;backdrop-filter: blur(40px); margin: 0px; padding: 0px;">
+                  <h5>Nova temporada!</h5>
+                  <p style="color: white;">Veja os detalhes da nova temporada de Rick and Morty</p>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+        <!--Alinhamento dos conteudos primarios. 5 cards de 3:2 com titulos h5 e texto.-->
+        <div class="container margin-0px justify-content-between mt-5" style="font-family: inherit;">
+          <h1 style="margin-bottom: 25px;">Recomendados:</h1>
+          <div class="row">
+            <div class="card mr-auto" style="width: 13rem;">
+              <img class="card-img-top" src="img/img-cards-3-2/coringa.jpg" alt="imagem do card">
+              <div class="card-body">
+                <h2 class="card-title">Coringa</h2>
+                <p class="card-text">Um comediante falido enlouquece e se torna um assassino psicopata.</p>
+                <a href="page2.html" class="btn btn-primary">Abrir Filme</a>
+              </div>
+            </div>
+            <div class="card mr-auto" style="width: 13rem;">
+              <img class="card-img-top" src="img/img-cards-3-2/homem-aranha-sem-volta-para-casa.jpg" alt="imagem do card">
+              <div class="card-body">
+                <h2 class="card-title">Homem-Aranha</h2>
+                <p class="card-text">Com a identidade do Homem-Aranha revelada, Peter pede ajuda ...</p>
+                <a href="page2.html" class="btn btn-primary">Abrir Filme</a>
+              </div>
+            </div>
+            <div class="card mr-auto" style="width: 13rem;">
+              <img class="card-img-top" src="img/img-cards-3-2/interstelar.jpg" alt="imagem do card">
+              <div class="card-body">
+                <h2 class="card-title">Interestelar</h2>
+                <p class="card-text">Uma equipe de exploradores viaja através de um buraco de minhoca no espaço, na tentativa de garantir a sobrevivência da humanidade.</p>
+                <a href="page2.html" class="btn btn-primary">Abrir Filme</a>
+              </div>
+            </div><div class="card mr-auto" style="width: 13rem;">
+              <img class="card-img-top" src="img/img-cards-3-2/o-cavaleiro-das-trevas.jpg" alt="imagem do card">
+              <div class="card-body">
+                <h2 class="card-title">Batman</h2>
+                <p class="card-text">Quando a ameaça conhecida como O Coringa surge de seu passado, causa estragos e caos nas pessoas...</p>
+                <a href="page2.html" class="btn btn-primary">Abrir Filme</a>
+              </div>
+            </div>
+            <div class="card mr-auto" style="width: 13rem;">
+              <img class="card-img-top" src="img/img-cards-3-2/the-witcher.jpg" alt="imagem do card">
+              <div class="card-body">
+                <h2 class="card-title">The Witcher</h2>
+                <p class="card-text">Geralt de Rivia, um caçador de monstros, luta contra um mundo onde as vezes as pessoas...</p>
+                <a href="page2.html" class="btn btn-primary">Abrir Filme</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--Alinhamento dos conteudos primarios. 5 cards de 4:3 com titulos h5-->
+        <div class="container mt-5" style="font-family: inherit;">
+          <h1 style="margin-bottom: 25px;">Artigos Mensais:</h1>
+          <div class="row mb-5">
+            <div class="col-sm-4">
+              <div class="card" style="width: 20rem;">
+                <a href="page2.html"><img class="card-img-top" src="img/img-card-4-3/Invasão Secreta.jpg" alt="Card image cap"></a>
+              </div>
+              <h5>Questões candentes com o elenco de "Invasão Secreta"</h5>
+            </div>
+            <div class="col-sm-4">
+              <div class="card" style="width: 20rem;">
+                <a href="page2.html"><img class="card-img-top" src="img/img-card-4-3/the-witcher.jpg" alt="Card image cap"></a>
+              </div>
+              <h5>
+                Qual ator de "Witcher" tem a melhor impressão de Geralt, hmm?</h5>
+            </div>
+            <div class="col-sm-4">
+              <div class="card" style="width: 20rem;">
+                <a href="page2.html"><img class="card-img-top" src="img/img-card-4-3/indiana-jones.jpg" alt="Card image cap"></a>
+              </div>
+                <h5>Franquia 'Indiana Jones' em números</h5>
+              </div>
+            </div>
+          </div>          
+        </div>
+
+        <!-- Imagen atores-->
+        <div class="container div-imagens-atores">
+            <div class="mt-4 imagens-atores-total">
+              <div class="col-sm-2 imagens-atores">
+                <a href="page2.html"><img class="imagem-ator" src="img/atores/Anya Taylor-Joy.jfif" alt="wu kang ren"></a>
+                <a href="page2.html"><p>Anya Taylor-Joy</p></a>
+              </div>
+              <div class="col-sm-2 imagens-atores">
+                <a href="page2.html"><img class="imagem-ator" src="img/atores/wu kang ren.jpg" alt="wu kang ren"></a>
+                <a href="page2.html"><p>Wu kang Ren</p></a>
+              </div>
+              <div class="col-sm-2 imagens-atores">
+                <a href="page2.html"><img class="imagem-ator" src="img/atores/Christian Convery.png" alt="Christian Convery"></a>
+                <a href="page2.html"><p>Christian Convery</p></a>
+              </div>
+              <div class="col-sm-2 imagens-atores">
+                <a href="page2.html"><img class="imagem-ator" src="img/atores/Song Hye-kyo.jpg" alt="Song Hye-kyo"></a>
+                <a href="page2.html"><p>Song Hye-kyo</p></a>
+              </div>
+              <div class="col-sm-2 imagens-atores">
+                <a href="page2.html"><img class="imagem-ator" src="img/atores/Pedro Pascal.jpg" alt="Pedro Pascal"></a>
+                <a href="page2.html"><p>Pedro Pascal</p></a>
+              </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="container py-5">
+      <div class="row">
+        <div class="col-6 col-md-2 mb-3">
+          <h5>Seção</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="page2.html" class="nav-link p-0 text-muted">Inicio</a></li>
+            <li class="nav-item mb-2"><a href="page2.html" class="nav-link p-0 text-muted">Recurso</a></li>
+            <li class="nav-item mb-2"><a href="page2.html" class="nav-link p-0 text-muted">Preços</a></li>
+            <li class="nav-item mb-2"><a href="page2.html" class="nav-link p-0 text-muted">FAQs</a></li>
+            <li class="nav-item mb-2"><a href="page2.html" class="nav-link p-0 text-muted">Sobre</a></li>
+          </ul>
+        </div>
+  
+        <div class="col-6 col-md-2 mb-3">
+          <h5>Seção</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="page2.html" class="nav-link p-0 text-muted">Inicio</a></li>
+            <li class="nav-item mb-2"><a href="page2.html" class="nav-link p-0 text-muted">Recurso</a></li>
+            <li class="nav-item mb-2"><a href="page2.html" class="nav-link p-0 text-muted">Preços</a></li>
+            <li class="nav-item mb-2"><a href="page2.html" class="nav-link p-0 text-muted">FAQs</a></li>
+            <li class="nav-item mb-2"><a href="page2.html" class="nav-link p-0 text-muted">Sobre</a></li>
+          </ul>
+        </div>
+  
+        <div class="col-6 col-md-2 mb-3">
+          <h5>Seção </h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="page2.html" class="nav-link p-0 text-muted">Inicio</a></li>
+            <li class="nav-item mb-2"><a href="page2.html" class="nav-link p-0 text-muted">Recurso</a></li>
+            <li class="nav-item mb-2"><a href="page2.html" class="nav-link p-0 text-muted">Preços</a></li>
+            <li class="nav-item mb-2"><a href="page2.html" class="nav-link p-0 text-muted">FAQs</a></li>
+            <li class="nav-item mb-2"><a href="page2.html" class="nav-link p-0 text-muted">Sobre</a></li>
+          </ul>
+        </div>
+  
+        <div class="col-md-5 offset-md-1 mb-3">
+          <form>
+            <h5>Se inscreva para receber atualizações</h5>
+            <p>Atualizações mensais de nossas novidades.</p>
+            <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+              <input id="newsletter1" type="text" class="form-control" placeholder="E-mail pra contato">
+              <button class="btn btn-primary" type="button">Subscribe</button>
+            </div>
+          </form>
+        </div>
+      </div>
+  
+      <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+        <p>© 2022 Company, Inc. All rights reserved.</p>
+        <ul class="list-unstyled d-flex">
+          <li class="ms-3"><a class="link-dark" href="page2.html"><img src="img/imagens_icones_redes/twitter.png" alt="Icones para rede social Twitter"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+          <li class="ms-3"><a class="link-dark" href="page2.html"><img src="img/imagens_icones_redes/instagram.png" alt="Icones para rede social Instagram"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+          <li class="ms-3"><a class="link-dark" href="page2.html"><img src="img/imagens_icones_redes/facebook.png" alt="Icones para rede social Facebook"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+        </ul>
+      </div>
+    </footer>
+    
+    <!--Script's usados no index-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>

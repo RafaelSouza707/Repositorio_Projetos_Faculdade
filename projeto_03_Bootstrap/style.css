@@ -1,0 +1,36 @@
+ul, li {
+    list-style-type: none;
+    
+}
+
+a {
+    color: grey;
+}
+
+.imagem-ator {
+    margin-right: 30px;
+    width: 100px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.imagens-atores-total {
+    display: flex;
+    justify-content: space-around;
+}
+
+a, p {
+    color: black;
+    text-decoration: none;
+    font-family: arial;
+}
+
+.carousel-inner {
+    height: 30em;
+}
+
+.enredo {
+    border-bottom: 1px solid black;
+    border-radius: 4px;
+    box-shadow: 1px 1px 1px 1px rgb(77, 77, 77);
+}
